@@ -22,3 +22,12 @@ MAE Loss | 9.1709 | 7.0361 | 5.7762
 ## Notes
 Most of the codes are from the offical hopenet repository.  
 Thanks. ^_^
+
+
+Model | Yaw | Pitch | Roll | MAE 
+----|---- | -----  | ----- | -----
+HopeNet | 9.17 | 7.04 | 5.78 | 7.33
+FSA-Net | 4.85 | 6.27 | 4.96 | 5.36
+6DRepNet | __3.67__ | __4.87__ | __3.37__ | __3.97__
+
+*All models are trained on 300W-LP and tested on AFLW2000.
