@@ -25,10 +25,18 @@ Model | Yaw | Pitch | Roll | MAE
 ----|---- | -----  | ----- | -----
 HopeNet | 9.17 | 7.04 | 5.78 | 7.33
 FSA-Net* | 4.85 | 6.27 | 4.96 | 5.36
-6DRepNet | __3.67__ | __4.87__ | __3.37__ | __3.97__
+img2pose† | 3.43 | 5.03 | 3.28 | 3.91 
+img2pose* | 6.70 | 17.17 | 15.15 | 13.00
+QuatNet†† | 3.973 | 5.615 | 3.920 | 4.503
+HPE†† | 4.870 | 6.180 | 4.800 | 5.280
+TriNet†† | 4.198 | 5.767 | 4.042 | 4.669
+6DRepNet | 3.67 | 4.87 | 3.37 | 3.97
 
 All models are trained on 300W-LP and tested on AFLW2000.  
-*FSA-Net is implemented on pytorch, note that the official version is implemented on tensorflow.
+*FSA-Net is implemented on pytorch, note that the official version is implemented on tensorflow.  
+*img2pose implementation uses parameters of mean and std on part of the database because the original database brings overflow of memory.  
+Methods marked with † are reported by others.
+Methods marked with †† are __not open source__.
 
 ## Notes
 Most of the codes are from the offical hopenet repository.  
