@@ -32,10 +32,13 @@ QuatNet†† | 3.973 | 5.615 | 3.920 | 4.503
 HPE†† | 4.870 | 6.180 | 4.800 | 5.280
 TriNet†† | 4.198 | 5.767 | 4.042 | 4.669
 6DRepNet | 3.67 | 4.87 | 3.37 | 3.97
+SynergyNet† | 3.42 | 4.09 | 2.55 | 3.35
+ViT-vec* | 29.48 | 12.48 | 13.39 | 18.45  
 
 All models are trained on 300W-LP and tested on AFLW2000.  
 *FSA-Net is implemented on pytorch, note that the official version is implemented on tensorflow.  
-*img2pose implementation uses parameters of mean and std on part of the database because the original database brings overflow of memory.  
+*img2pose implementation uses parameters of mean and std on part of the database because the original database brings overflow of memory. And it is tarined on WIDER dataset.  
+* ViT-vec is based on 6DRepNet and only ran 1 epoch on 300W-LP dataset.  
 Dlib is implemented on `C++`. The result is reported by others.  
 Methods marked with † are reported by others.  
 Methods marked with †† are __not open source__.
