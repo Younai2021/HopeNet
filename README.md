@@ -23,11 +23,11 @@ MAE Loss | 9.1709 | 7.0361 | 5.7762
 ## Comparisons
 Model | Yaw | Pitch | Roll | MAE 
 ----|---- | -----  | ----- | -----
+Dlib† (68 points) | 18.273 | 12.604 | 8.998 | 13.292
+img2pose* | 6.70 | 17.17 | 15.15 | 13.00
 HopeNet | 9.17 | 7.04 | 5.78 | 7.33
 FSA-Net* | 4.85 | 6.27 | 4.96 | 5.36
 img2pose† | 3.43 | 5.03 | 3.28 | 3.91 
-img2pose* | 6.70 | 17.17 | 15.15 | 13.00
-Dlib† (68 points) | 18.273 | 12.604 | 8.998 | 13.292
 QuatNet†† | 3.973 | 5.615 | 3.920 | 4.503
 HPE†† | 4.870 | 6.180 | 4.800 | 5.280
 TriNet†† | 4.198 | 5.767 | 4.042 | 4.669
@@ -38,7 +38,7 @@ ViT-vec* | 29.48 | 12.48 | 13.39 | 18.45
 All models are trained on 300W-LP and tested on AFLW2000.  
 *FSA-Net is implemented on pytorch, note that the official version is implemented on tensorflow.  
 *img2pose implementation uses parameters of mean and std on part of the database because the original database brings overflow of memory. And it is tarined on WIDER dataset.  
-* ViT-vec is based on 6DRepNet and only ran 1 epoch on 300W-LP dataset.  
+*ViT-vec is based on 6DRepNet and only ran 1 epoch on 300W-LP dataset.  
 Dlib is implemented on `C++`. The result is reported by others.  
 Methods marked with † are reported by others.  
 Methods marked with †† are __not open source__.
